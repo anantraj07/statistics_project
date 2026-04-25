@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriEcon India — Complete Diet Science Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <div class="logo-mark">N</div>
+      <span>NutriEcon<em>India</em></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#who">WHO Guide</a></li>
+      <li><a href="#calculator">Diet Builder</a></li>
+      <li><a href="#meals">Meal Plan</a></li>
+      <li><a href="#recipes">Recipes</a></li>
+      <li><a href="#explorer">Food DB</a></li>
+      <li><a href="#analysis">Statistics</a></li>
+      <li><a href="#nfhs">NFHS-5</a></li>
+    </ul>
+    <button class="nav-cta" onclick="scroll2('calculator')">Build My Diet ↗</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-noise"></div>
+  <div class="hero-grid-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <span class="pill-badge">WHO 2026 · ICMR · NFHS-5 · SM-I &amp; SM-II</span>
+    </div>
+    <h1 class="hero-h1">
+      India's <em>Minimum Cost</em><br>
+      Nutritionally Complete<br>
+      <span class="h1-accent">Diet Science Platform</span>
+    </h1>
+    <p class="hero-p">
+      The only beginner-friendly guide that tells you <strong>exactly what to eat, when, how much, why</strong> — 
+      built on WHO 2026 guidelines, ICMR requirements, real food prices, and statistical methods from 329 nutrient records &amp; 36 NFHS-5 indicators.
+    </p>
+    <div class="hero-ctas">
+      <button class="btn-primary" onclick="scroll2('calculator')">
+        <span>Build My Complete Diet Plan</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <button class="btn-outline" onclick="scroll2('who')">
+        <span>Learn the Science</span>
+      </button>
+    </div>
+    <div class="hero-counters">
+      <div class="hc"><div class="hc-num" data-target="329">0</div><div class="hc-label">Nutrient Records</div></div>
+      <div class="hc-div"></div>
+      <div class="hc"><div class="hc-num" data-target="231">0</div><div class="hc-label">Indian Dishes</div></div>
+      <div class="hc-div"></div>
+      <div class="hc"><div class="hc-num" data-target="36">0</div><div class="hc-label">NFHS-5 Indicators</div></div>
+      <div class="hc-div"></div>
+      <div class="hc"><div class="hc-num" data-target="24">0</div><div class="hc-label">States Analysed</div></div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- WHO SECTION -->
+<section id="who" class="section">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag">WHO Healthy Diet · January 2026</div>
+      <h2 class="sec-title">The Four Pillars of a Healthy Diet</h2>
+      <p class="sec-sub">WHO's core framework: <strong>Adequacy · Balance · Moderation · Diversity</strong>. Every recommendation on this platform traces back to these four principles.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">⚖</div>
+        <div class="pillar-title">Adequacy</div>
+        <div class="pillar-desc">Meets micronutrient and macronutrient needs without excess. Prevents deficiencies in iron, zinc, vitamin A, folate — the four most prevalent globally.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🔄</div>
+        <div class="pillar-title">Balance</div>
+        <div class="pillar-desc">Total energy intake equals energy expenditure. Carbs 45–75%, Fats 15–30%, Protein 10–15% of total daily energy — no single macro dominates.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🎯</div>
+        <div class="pillar-title">Moderation</div>
+        <div class="pillar-desc">Limit saturated fat &lt;10%, trans fat &lt;1%, free sugars &lt;10%, salt &lt;5g/day. Not zero — just limited. Deprivation causes diet failure.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🌈</div>
+        <div class="pillar-title">Diversity</div>
+        <div class="pillar-desc">Wide variety within and across food groups. Dark greens for iron &amp; vitamin A. Citrus for vitamin C. Dairy/fish for calcium. Pulses for fibre.</div>
+      </div>
+    </div>
+
+    <div class="who-numbers-strip">
+      <div class="wn"><div class="wn-val">400<span>g</span></div><div class="wn-label">Fruits &amp; Vegs daily</div></div>
+      <div class="wn"><div class="wn-val">25<span>g</span></div><div class="wn-label">Dietary fibre/day</div></div>
+      <div class="wn"><div class="wn-val">10<span>%</span></div><div class="wn-label">Max from free sugars</div></div>
+      <div class="wn"><div class="wn-val">5<span>g</span></div><div class="wn-label">Max salt per day</div></div>
+      <div class="wn"><div class="wn-val">30<span>%</span></div><div class="wn-label">Max energy from fat</div></div>
+      <div class="wn"><div class="wn-val">30<span>+</span></div><div class="wn-label">Essential micronutrients</div></div>
+    </div>
+
+    <div class="macro-guide-grid">
+      <div class="macro-card carbs">
+        <div class="macro-header">
+          <div class="macro-icon">🌾</div>
+          <div>
+            <div class="macro-name">Carbohydrates</div>
+            <div class="macro-pct">45–75% of calories</div>
+          </div>
+        </div>
+        <p>Primary energy source. Choose <strong>whole grains, oats, millets, pulses</strong>. Avoid refined flour and white rice as main source. 1g carb = <strong>4 kcal</strong>.</p>
+        <div class="macro-india">🇮🇳 Indian sources: brown rice, ragi, bajra, jowar, whole wheat atta, lentils, chana dal</div>
+      </div>
+      <div class="macro-card protein">
+        <div class="macro-header">
+          <div class="macro-icon">💪</div>
+          <div>
+            <div class="macro-name">Protein</div>
+            <div class="macro-pct">10–15% of calories</div>
+          </div>
+        </div>
+        <p>Builds muscle, enzymes, hormones. ICMR: <strong>0.8–1g/kg body weight</strong>. Athletes need 1.6–2.2g/kg. 1g protein = <strong>4 kcal</strong>.</p>
+        <div class="macro-india">🇮🇳 Indian sources: dal, chana, rajma, soya, paneer, eggs, fish, chicken, curd</div>
+      </div>
+      <div class="macro-card fats">
+        <div class="macro-header">
+          <div class="macro-icon">🥑</div>
+          <div>
+            <div class="macro-name">Fats</div>
+            <div class="macro-pct">15–30% of calories</div>
+          </div>
+        </div>
+        <p>Essential for hormones, brain, fat-soluble vitamins. Choose <strong>unsaturated</strong> (mustard oil, nuts, seeds). Limit ghee, butter. 1g fat = <strong>9 kcal</strong>.</p>
+        <div class="macro-india">🇮🇳 Indian sources: mustard oil, sesame, groundnuts, almonds, flaxseed, coconut</div>
+      </div>
+      <div class="macro-card micro">
+        <div class="macro-header">
+          <div class="macro-icon">✨</div>
+          <div>
+            <div class="macro-name">Micronutrients</div>
+            <div class="macro-pct">30+ vitamins &amp; minerals</div>
+          </div>
+        </div>
+        <p>Iron, zinc, vitamin A, folate — most deficient in India. <strong>50%+ of Indian women are anaemic</strong>. Requires diverse, colourful eating.</p>
+        <div class="macro-india">🇮🇳 Critical: spinach/iron, amla/vitamin C, carrots/vitamin A, milk/calcium, dal/zinc</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEGINNER GUIDE SECTION -->
+<section id="beginner" class="section section-dark">
+  <div class="container">
+    <div class="sec-header light">
+      <div class="sec-tag">For Absolute Beginners</div>
+      <h2 class="sec-title">Your Diet in Simple Terms</h2>
+      <p class="sec-sub">Before the calculator, understand these 5 concepts. Everything else follows from them.</p>
+    </div>
+    <div class="beginner-steps">
+      <div class="bstep">
+        <div class="bstep-num">01</div>
+        <div class="bstep-content">
+          <h3>Calories = Energy</h3>
+          <p>Your body burns a certain number of calories per day just to exist (BMR) plus whatever you move. <strong>Eat less → lose weight. Eat more → gain weight.</strong> But quality matters — 500 kcal of dal is very different from 500 kcal of biscuits.</p>
+        </div>
+      </div>
+      <div class="bstep">
+        <div class="bstep-num">02</div>
+        <div class="bstep-content">
+          <h3>Protein is non-negotiable</h3>
+          <p>Protein preserves muscle when losing weight and builds it when gaining. Most Indians eat 30–40g/day. You need <strong>50–80g minimum</strong>. Dal at every meal + paneer/egg/fish is the minimum viable protein strategy.</p>
+        </div>
+      </div>
+      <div class="bstep">
+        <div class="bstep-num">03</div>
+        <div class="bstep-content">
+          <h3>Don't fear carbs, fear processed carbs</h3>
+          <p>Roti, dal, rice — these are fine. Maida biscuits, white bread, packed snacks — avoid these. <strong>Fibre</strong> in whole grains keeps you full and feeds your gut microbiome.</p>
+        </div>
+      </div>
+      <div class="bstep">
+        <div class="bstep-num">04</div>
+        <div class="bstep-content">
+          <h3>Micronutrients prevent disease</h3>
+          <p>You can have enough calories and still be malnourished. Iron deficiency causes fatigue and anaemia. Vitamin A deficiency causes night blindness. <strong>Eat vegetables of 3+ colours every day.</strong></p>
+        </div>
+      </div>
+      <div class="bstep">
+        <div class="bstep-num">05</div>
+        <div class="bstep-content">
+          <h3>Timing matters less than totals</h3>
+          <p>Daily totals > meal timing for most people. That said: <strong>eat breakfast</strong> (kickstarts metabolism), <strong>protein at every meal</strong> (muscle protein synthesis), <strong>avoid large meals 2h before bed</strong> (digestion quality).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN DIET CALCULATOR -->
+<section id="calculator" class="section">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag">Optimization Engine</div>
+      <h2 class="sec-title">Complete Diet Builder</h2>
+      <p class="sec-sub">Get your personalised TDEE, macro targets, minimum cost food basket, and full weekly meal plan — in one click. Uses Mifflin–St Jeor BMR equation &amp; ICMR 2020 nutrient targets.</p>
+    </div>
+
+    <div class="calc-wrapper">
+      <!-- Form -->
+      <div class="calc-form">
+        <div class="form-section">
+          <div class="form-section-title">📋 Personal Profile</div>
+          <div class="form-row-2">
+            <div class="fg">
+              <label>Age (years)</label>
+              <input type="number" id="cAge" value="25" min="15" max="75">
+            </div>
+            <div class="fg">
+              <label>Gender</label>
+              <select id="cGender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label>Weight (kg)</label>
+              <input type="number" id="cWeight" value="65" min="30" max="150">
+            </div>
+            <div class="fg">
+              <label>Height (cm)</label>
+              <input type="number" id="cHeight" value="170" min="140" max="210">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-section-title">🏃 Lifestyle</div>
+          <div class="form-row-1">
+            <div class="fg">
+              <label>Activity Level</label>
+              <select id="cActivity">
+                <option value="1.2">Sedentary — desk job, minimal walking</option>
+                <option value="1.375">Light active — walk ~3–5 km/day</option>
+                <option value="1.55" selected>Moderate — exercise 3–5x/week</option>
+                <option value="1.725">Very active — intense exercise 6–7x/week</option>
+                <option value="1.9">Extremely active — manual labour / athlete</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-section-title">🎯 Goal</div>
+          <div class="form-row-1">
+            <div class="fg">
+              <label>Primary Goal</label>
+              <select id="cGoal">
+                <option value="maintain">Maintain weight &amp; health</option>
+                <option value="lose_fat">Lose fat (preserve muscle)</option>
+                <option value="gain_muscle">Gain muscle (lean bulk)</option>
+                <option value="lose_fast">Lose weight aggressively</option>
+                <option value="high_protein">High protein (strength training)</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label>Budget Preference</label>
+              <select id="cBudget">
+                <option value="minimum">Minimum cost (₹40–70/day)</option>
+                <option value="moderate" selected>Moderate (₹70–130/day)</option>
+                <option value="comfortable">Comfortable (₹130–200/day)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-section-title">🥗 Preferences</div>
+          <div class="form-row-2">
+            <div class="fg">
+              <label>Diet Type</label>
+              <select id="cDiet">
+                <option value="all">Non-vegetarian</option>
+                <option value="veg">Vegetarian</option>
+                <option value="eggetarian">Eggetarian (veg + eggs)</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label>State (NFHS-5 context)</label>
+              <select id="cState">
+                <option value="">— Optional —</option>
+              </select>
+            </div>
+          </div>
+          <!-- Protein slider -->
+          <div class="fg protein-slider-wrap">
+            <label>Extra Protein Target (beyond ICMR baseline)</label>
+            <div class="slider-row">
+              <input type="range" id="proteinBoost" min="0" max="80" step="5" value="0" oninput="updateProteinLabel()">
+              <span class="slider-val" id="proteinBoostLabel">+0g</span>
+            </div>
+            <div class="slider-hint" id="proteinHint">Baseline ICMR. If you add protein, carbs will auto-adjust.</div>
+          </div>
+        </div>
+
+        <button class="calc-submit-btn" onclick="runCalculator()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>
+          Generate My Complete Diet Plan
+        </button>
+      </div>
+
+      <!-- Results -->
+      <div class="calc-results" id="calcResults">
+        <div class="calc-placeholder">
+          <div class="placeholder-glyph">◎</div>
+          <p>Complete the form and generate your personalised diet plan with full meal schedule, food basket, nutrient breakdown, and state context.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEAL PLAN SECTION -->
+<section id="meals" class="section section-warm">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag">7-Day Meal Framework</div>
+      <h2 class="sec-title">When to Eat &amp; How Much</h2>
+      <p class="sec-sub">Optimal meal timing for metabolism, muscle preservation and satiety. Based on WHO dietary guidelines and sports nutrition research. Customised to your TDEE after running the calculator.</p>
+    </div>
+    <div class="meal-timing-grid" id="mealTimingGrid">
+      <!-- Built by JS -->
+    </div>
+    <div class="weekly-plan" id="weeklyPlan">
+      <!-- Built by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- HEALTHY RECIPES SECTION -->
+<section id="recipes" class="section">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag">Budget Nutrition Kitchen</div>
+      <h2 class="sec-title">Healthy Indian Recipes with Full Nutrition</h2>
+      <p class="sec-sub">High-protein, nutrient-dense recipes using cheap Indian ingredients. Each recipe shows exact calories, macros, cost, prep time, and nutritional benefits.</p>
+    </div>
+    <div class="recipe-filters">
+      <button class="rpill active" onclick="filterRecipes('all',this)">All</button>
+      <button class="rpill" onclick="filterRecipes('high_protein',this)">High Protein</button>
+      <button class="rpill" onclick="filterRecipes('weight_loss',this)">Weight Loss</button>
+      <button class="rpill" onclick="filterRecipes('muscle',this)">Muscle Gain</button>
+      <button class="rpill" onclick="filterRecipes('budget',this)">Budget (&lt;₹20)</button>
+      <button class="rpill" onclick="filterRecipes('veg',this)">Vegetarian</button>
+    </div>
+    <div class="recipe-grid" id="recipeGrid">
+      <!-- Built by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- FOOD EXPLORER -->
+<section id="explorer" class="section section-warm">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag">231 Indian Dishes · 329 Nutrient Records</div>
+      <h2 class="sec-title">Food Database Explorer</h2>
+      <p class="sec-sub">Browse every food in our database. Click any card for full nutrition breakdown, calories per 100g, and role in your diet.</p>
+    </div>
+    <div class="explorer-top">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="foodSearch" placeholder="Search foods, ingredients, regions..." oninput="filterFoods()">
+      </div>
+      <div class="filter-row">
+        <button class="fpill active" data-f="all" onclick="setFoodFilter('all',this)">All</button>
+        <button class="fpill" data-f="vegetarian" onclick="setFoodFilter('vegetarian',this)">Veg</button>
+        <button class="fpill" data-f="non vegetarian" onclick="setFoodFilter('non vegetarian',this)">Non-Veg</button>
+        <button class="fpill" data-f="North" onclick="setFoodFilter('North',this)">North</button>
+        <button class="fpill" data-f="South" onclick="setFoodFilter('South',this)">South</button>
+        <button class="fpill" data-f="East" onclick="setFoodFilter('East',this)">East</button>
+        <button class="fpill" data-f="West" onclick="setFoodFilter('West',this)">West</button>
+        <button class="fpill" data-f="main course" onclick="setFoodFilter('main course',this)">Mains</button>
+        <button class="fpill" data-f="breakfast" onclick="setFoodFilter('breakfast',this)">Breakfast</button>
+        <button class="fpill" data-f="snack" onclick="setFoodFilter('snack',this)">Snacks</button>
+        <button class="fpill" data-f="dessert" onclick="setFoodFilter('dessert',this)">Desserts</button>
+      </div>
+      <div class="result-count" id="foodCount">Loading…</div>
+    </div>
+    <div class="food-grid" id="foodGrid"></div>
+  </div>
+</section>
+
+<!-- STATISTICAL ANALYSIS -->
+<section id="analysis" class="section section-dark">
+  <div class="container">
+    <div class="sec-header light">
+      <div class="sec-tag">SM-I &amp; SM-II Statistical Methods</div>
+      <h2 class="sec-title">Statistical Analysis Dashboard</h2>
+      <p class="sec-sub">Real-time computation over the 329-record nutrient dataset. Descriptive statistics, Pearson correlation, OLS regression, Q-Q plots, Pearson χ² goodness-of-fit, and two-sample t-tests.</p>
+    </div>
+
+    <!-- Statistical Methods Cards -->
+    <div class="methods-nav">
+      <button class="mtab active" data-tab="sm1" onclick="switchTab('sm1',this)">SM-I Methods</button>
+      <button class="mtab" data-tab="sm2" onclick="switchTab('sm2',this)">SM-II Methods</button>
+    </div>
+    <div class="methods-grid" id="methodsGrid"></div>
+
+    <!-- Descriptive Stats -->
+    <div class="analysis-card">
+      <h3 class="analysis-card-title">Descriptive Statistics — Caloric Content by Category</h3>
+      <div id="descTable"></div>
+    </div>
+
+    <!-- Charts -->
+    <div class="charts-2col">
+      <div class="chart-card">
+        <h4>Calorie Distribution — Histogram</h4>
+        <p class="chart-note">Right-skewed distribution (γ₁ &gt; 0). Testing normality assumption for χ² test.</p>
+        <div class="chart-area"><canvas id="histChart"></canvas></div>
+        <div class="chart-badges" id="histBadges"></div>
+      </div>
+      <div class="chart-card">
+        <h4>Protein vs Calories — OLS Regression</h4>
+        <p class="chart-note">Pearson r and fitted line: Protein = β₀ + β₁·Calories</p>
+        <div class="chart-area"><canvas id="scatterChart"></canvas></div>
+        <div class="chart-badges" id="scatterBadges"></div>
+      </div>
+    </div>
+
+    <div class="charts-2col">
+      <div class="chart-card">
+        <h4>Average Calories by Food Category</h4>
+        <p class="chart-note">One-way comparison; basis for category-level t-tests.</p>
+        <div class="chart-area-tall"><canvas id="catChart"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h4>Q-Q Plot — Calorie Distribution vs Normal</h4>
+        <p class="chart-note">Visual normality test; supports χ² goodness-of-fit result.</p>
+        <div class="chart-area-tall"><canvas id="qqChart"></canvas></div>
+        <div class="chart-badges" id="qqBadges"></div>
+      </div>
+    </div>
+
+    <!-- Multiple Regression -->
+    <div class="analysis-card">
+      <h3 class="analysis-card-title">Multiple Regression — BMI Determinants (NFHS-5)</h3>
+      <p class="analysis-note">Model: BMI = β₀ + β₁·Age + β₂·WealthIndex + β₃·DietScore + β₄·Urban + ε</p>
+      <div id="regrTable"></div>
+    </div>
+
+    <!-- Chi-Square + t-test -->
+    <div class="charts-2col">
+      <div class="analysis-card">
+        <h3 class="analysis-card-title">Pearson χ² Goodness-of-Fit</h3>
+        <div id="chiResult"></div>
+      </div>
+      <div class="analysis-card">
+        <h3 class="analysis-card-title">Two-Sample t-Test — Wealth &amp; BMI</h3>
+        <div id="tTestResult"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NFHS-5 STATE GRID -->
+<section id="nfhs" class="section">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag">NFHS-5 · 2019–21 National Family Health Survey</div>
+      <h2 class="sec-title">State Nutritional Landscape</h2>
+      <p class="sec-sub">24 major Indian states. High thinness and stunting rates = population where minimum diet cost exceeds household capacity. Sorted by severity.</p>
+    </div>
+    <div class="nfhs-grid" id="nfhsGrid"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">NutriEcon<em>India</em></div>
+        <p>A quantitative diet science platform built on real data, WHO 2026 guidelines, and statistical methods.</p>
+      </div>
+      <div>
+        <h4>Data Sources</h4>
+        <ul>
+          <li>NFHS-5 (2019–21), MoHFW India</li>
+          <li>NSSO 68th Round Consumer Expenditure</li>
+          <li>ICMR Nutrient Requirements 2020, NIN</li>
+          <li>WHO Healthy Diet Fact Sheet, Jan 2026</li>
+          <li>FAO/USDA Food Composition Database</li>
+          <li>AGMARKNET Retail Prices 2024</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Methods</h4>
+        <ul>
+          <li>Mifflin–St Jeor BMR Equation</li>
+          <li>Greedy Nutrient Coverage Optimizer</li>
+          <li>Pearson OLS Regression</li>
+          <li>Pearson χ² Goodness-of-Fit</li>
+          <li>Two-sample t-test</li>
+          <li>Q-Q Plot Normality Test</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Built for SM-II Statistical Methods coursework · All computations client-side on open datasets · No food images used
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
